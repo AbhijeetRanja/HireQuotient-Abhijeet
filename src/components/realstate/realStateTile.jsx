@@ -4,12 +4,7 @@ import ExpandIcon from '../../helpers/expandIcon';
 
 const Tile = ({ data,title }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const checkIfLoan =(currentHeading)=>{
-return !((title=='Loan' && (currentHeading=='average price')) ||
-(title=='Cash' && (currentHeading=='average price' || currentHeading=='Market Price'))
-)
-    }
-
+    
     return (
         <div className="m-4">
             <div className="cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
